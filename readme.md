@@ -1,6 +1,6 @@
 # Loss Landscape Analyzer - Quick Start Guide
 
-## 📦 Installation (5 minutes)
+## 📦 Installatio
 
 ### Step 1: Create Project Folder
 ```bash
@@ -28,8 +28,6 @@ Save these two files in your project folder:
 ```bash
 pip install -r requirements.txt
 ```
-
-**Note:** This will take 3-5 minutes as PyTorch is a large package.
 
 ---
 
@@ -224,8 +222,6 @@ git push -u origin main
 5. Set main file: `loss_landscape_analysis.py`
 6. Click "Deploy"
 
-**Your app will be live at:** `https://your-app-name.streamlit.app`
-
 ---
 
 ## 📚 Key Papers Referenced
@@ -242,24 +238,6 @@ git push -u origin main
    - https://arxiv.org/abs/1609.04836
    - Sharpness-generalization connection
 
----
-
-## 💡 Tips for Success
-
-1. **Run multiple trials** - Use different random seeds for robustness
-2. **Export all data** - Download CSVs for every experiment
-3. **Take screenshots** - Capture all visualizations for your report
-4. **Compare systematically** - Change one variable at a time
-5. **Document everything** - Keep notes on each experiment
-
----
-
-## ⏱️ Time Estimates
-
-- **Installation**: 5 minutes
-- **Single experiment**: 3-5 minutes
-- **Complete study (12 runs)**: 45-60 minutes
-- **Report writing**: 2-3 hours
 
 ---
 
