@@ -1,0 +1,150 @@
+================================================================================
+LOSS LANDSCAPE BATCH EXPERIMENTS
+================================================================================
+
+This will run systematic experiments for your report.
+Total time: ~15-20 minutes
+
+Press Ctrl+C to cancel, or wait 5 seconds to continue...
+Running 36 experiments...
+================================================================================
+  0%|                                                                                                                                        | 0/36 [00:00<?, ?it/s]C:\Users\D. Sai Mani Kumar\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\loss.py:535: UserWarning: Using a target size (torch.Size([200, 200])) that is different to the input size (torch.Size([200, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+shallow-sgd (trial 1/3):   3%|██▊                                                                                                    | 1/36 [00:03<01:50,  3.17s/it]
+shallow    + sgd        | Loss: 0.2612 | Sharpness: 0.0016 | Hessian: 8.1815
+shallow-sgd (trial 2/3):   6%|█████▋                                                                                                 | 2/36 [00:04<01:04,  1.90s/it]
+shallow    + sgd        | Loss: 0.2646 | Sharpness: 0.0021 | Hessian: 11.0556
+shallow-sgd (trial 3/3):   8%|████████▌                                                                                              | 3/36 [00:05<00:50,  1.54s/it]
+shallow    + sgd        | Loss: 0.2603 | Sharpness: 0.0028 | Hessian: 6.4597
+shallow-momentum (trial 1/3):  11%|██████████▉                                                                                       | 4/36 [00:06<00:42,  1.34s/it]
+shallow    + momentum   | Loss: 0.2577 | Sharpness: 0.0045 | Hessian: 9.3742
+shallow-momentum (trial 2/3):  14%|█████████████▌                                                                                    | 5/36 [00:07<00:38,  1.24s/it]
+shallow    + momentum   | Loss: 0.2574 | Sharpness: 0.0010 | Hessian: 9.4701
+shallow-momentum (trial 3/3):  17%|████████████████▎                                                                                 | 6/36 [00:08<00:34,  1.17s/it]
+shallow    + momentum   | Loss: 0.2576 | Sharpness: 0.0014 | Hessian: 8.3158
+shallow-adam (trial 1/3):  19%|███████████████████▊                                                                                  | 7/36 [00:09<00:32,  1.14s/it]
+shallow    + adam       | Loss: 0.2573 | Sharpness: 0.0015 | Hessian: 4.2439
+shallow-adam (trial 2/3):  22%|██████████████████████▋                                                                               | 8/36 [00:10<00:31,  1.12s/it]
+shallow    + adam       | Loss: 0.2568 | Sharpness: 0.0027 | Hessian: 8.1121
+shallow-adam (trial 3/3):  25%|█████████████████████████▌                                                                            | 9/36 [00:11<00:30,  1.11s/it]
+shallow    + adam       | Loss: 0.2565 | Sharpness: 0.0020 | Hessian: 5.4398
+deep-sgd (trial 1/3):  28%|█████████████████████████████▏                                                                           | 10/36 [00:13<00:32,  1.25s/it]
+deep       + sgd        | Loss: 0.2577 | Sharpness: 0.0004 | Hessian: 3.0640
+deep-sgd (trial 2/3):  31%|████████████████████████████████                                                                         | 11/36 [00:14<00:35,  1.41s/it]
+deep       + sgd        | Loss: 0.2588 | Sharpness: 0.0009 | Hessian: 3.2486
+deep-sgd (trial 3/3):  33%|███████████████████████████████████                                                                      | 12/36 [00:16<00:37,  1.56s/it]
+deep       + sgd        | Loss: 0.2581 | Sharpness: 0.0012 | Hessian: 2.8698
+deep-momentum (trial 1/3):  36%|████████████████████████████████████                                                                | 13/36 [00:18<00:36,  1.58s/it]
+deep       + momentum   | Loss: 0.2576 | Sharpness: 0.0015 | Hessian: 3.2376
+deep-momentum (trial 2/3):  39%|██████████████████████████████████████▉                                                             | 14/36 [00:20<00:35,  1.61s/it] 
+deep       + momentum   | Loss: 0.2575 | Sharpness: 0.0009 | Hessian: 2.4189
+deep-momentum (trial 3/3):  42%|█████████████████████████████████████████▋                                                          | 15/36 [00:21<00:34,  1.65s/it] 
+deep       + momentum   | Loss: 0.2576 | Sharpness: 0.0010 | Hessian: 3.1262
+deep-adam (trial 1/3):  44%|██████████████████████████████████████████████▏                                                         | 16/36 [00:23<00:33,  1.68s/it] 
+deep       + adam       | Loss: 0.2546 | Sharpness: 0.0016 | Hessian: 4.2891
+deep-adam (trial 2/3):  47%|█████████████████████████████████████████████████                                                       | 17/36 [00:25<00:32,  1.71s/it] 
+deep       + adam       | Loss: 0.2538 | Sharpness: 0.0028 | Hessian: 4.1958
+deep-adam (trial 3/3):  50%|████████████████████████████████████████████████████                                                    | 18/36 [00:27<00:32,  1.78s/it] 
+deep       + adam       | Loss: 0.2566 | Sharpness: 0.0006 | Hessian: 3.2881
+wide-sgd (trial 1/3):  53%|███████████████████████████████████████████████████████▍                                                 | 19/36 [00:29<00:31,  1.83s/it] 
+wide       + sgd        | Loss: 0.2585 | Sharpness: 0.0075 | Hessian: 29.4225
+wide-sgd (trial 2/3):  56%|██████████████████████████████████████████████████████████▎                                              | 20/36 [00:30<00:27,  1.75s/it] 
+wide       + sgd        | Loss: 0.2587 | Sharpness: 0.0052 | Hessian: 27.2010
+wide-sgd (trial 3/3):  58%|█████████████████████████████████████████████████████████████▎                                           | 21/36 [00:32<00:26,  1.76s/it]
+wide       + sgd        | Loss: 0.2592 | Sharpness: 0.0057 | Hessian: 25.5757
+wide-momentum (trial 1/3):  61%|█████████████████████████████████████████████████████████████                                       | 22/36 [00:34<00:23,  1.67s/it]
+wide       + momentum   | Loss: 0.2572 | Sharpness: 0.0039 | Hessian: 24.0587
+wide-momentum (trial 2/3):  64%|███████████████████████████████████████████████████████████████▉                                    | 23/36 [00:35<00:21,  1.65s/it]
+wide       + momentum   | Loss: 0.2574 | Sharpness: 0.0063 | Hessian: 25.0975
+wide-momentum (trial 3/3):  67%|██████████████████████████████████████████████████████████████████▋                                 | 24/36 [00:37<00:19,  1.64s/it]
+wide       + momentum   | Loss: 0.2575 | Sharpness: 0.0076 | Hessian: 24.6329
+wide-adam (trial 1/3):  69%|████████████████████████████████████████████████████████████████████████▏                               | 25/36 [00:38<00:17,  1.60s/it]
+wide       + adam       | Loss: 0.2561 | Sharpness: 0.0068 | Hessian: 23.9002
+wide-adam (trial 2/3):  72%|███████████████████████████████████████████████████████████████████████████                             | 26/36 [00:40<00:16,  1.67s/it]
+wide       + adam       | Loss: 0.2560 | Sharpness: 0.0069 | Hessian: 22.8680
+wide-adam (trial 3/3):  75%|██████████████████████████████████████████████████████████████████████████████                          | 27/36 [00:42<00:14,  1.60s/it]
+wide       + adam       | Loss: 0.2553 | Sharpness: 0.0037 | Hessian: 23.2755
+residual-sgd (trial 1/3):  78%|██████████████████████████████████████████████████████████████████████████████▌                      | 28/36 [00:43<00:12,  1.60s/it]
+residual   + sgd        | Loss: 0.2579 | Sharpness: 0.0009 | Hessian: 3.7022
+residual-sgd (trial 2/3):  81%|█████████████████████████████████████████████████████████████████████████████████▎                   | 29/36 [00:45<00:11,  1.58s/it]
+residual   + sgd        | Loss: 0.2585 | Sharpness: 0.0006 | Hessian: 3.1040
+residual-sgd (trial 3/3):  83%|████████████████████████████████████████████████████████████████████████████████████▏                | 30/36 [00:47<00:10,  1.76s/it]
+residual   + sgd        | Loss: 0.2594 | Sharpness: 0.0011 | Hessian: 4.0115
+residual-momentum (trial 1/3):  86%|██████████████████████████████████████████████████████████████████████████████████▋             | 31/36 [00:50<00:10,  2.11s/it]
+residual   + momentum   | Loss: 0.2575 | Sharpness: 0.0006 | Hessian: 3.1827
+residual-momentum (trial 2/3):  89%|█████████████████████████████████████████████████████████████████████████████████████▎          | 32/36 [00:52<00:08,  2.15s/it]
+residual   + momentum   | Loss: 0.2575 | Sharpness: 0.0015 | Hessian: 3.7620
+residual-momentum (trial 3/3):  92%|████████████████████████████████████████████████████████████████████████████████████████        | 33/36 [00:54<00:06,  2.02s/it]
+residual   + momentum   | Loss: 0.2576 | Sharpness: 0.0006 | Hessian: 3.6439
+residual-adam (trial 1/3):  94%|██████████████████████████████████████████████████████████████████████████████████████████████▍     | 34/36 [00:56<00:03,  1.91s/it]
+residual   + adam       | Loss: 0.2568 | Sharpness: 0.0005 | Hessian: 2.5844
+residual-adam (trial 2/3):  97%|█████████████████████████████████████████████████████████████████████████████████████████████████▏  | 35/36 [00:57<00:01,  1.80s/it]
+residual   + adam       | Loss: 0.2561 | Sharpness: 0.0010 | Hessian: 3.1139
+residual-adam (trial 3/3): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 36/36 [00:59<00:00,  1.74s/it]
+residual   + adam       | Loss: 0.2571 | Sharpness: 0.0008 | Hessian: 2.9372
+residual-adam (trial 3/3): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 36/36 [00:59<00:00,  1.64s/it] 
+
+================================================================================
+All experiments completed!
+
+✓ Saved summary to: results\experiment_summary.csv
+✓ Saved detailed results to: results\detailed_results.json
+✓ Saved statistics to: results\statistics.csv
+✓ Saved plot: results\architecture_comparison.png
+✓ Saved plot: results\optimizer_comparison.png
+✓ Saved plot: results\correlation_matrix.png
+
+================================================================================
+Analysis complete! Check the 'results' folder for all outputs.
+
+================================================================================
+SUMMARY TABLE (Mean across trials)
+================================================================================
+                          Loss  Sharpness  Hessian      Entropy
+Architecture Optimizer
+deep         adam       0.2550     0.0017   3.9243 -407726.0130
+             momentum   0.2576     0.0011   2.9276 -332792.3137
+             sgd        0.2582     0.0008   3.0608 -194583.1557
+residual     adam       0.2566     0.0008   2.8785 -448974.1058
+             momentum   0.2575     0.0009   3.5295 -235479.2940
+             sgd        0.2586     0.0009   3.6059 -120419.5240
+shallow      adam       0.2569     0.0021   5.9319 -172907.3290
+             momentum   0.2576     0.0023   9.0534 -115588.0521
+             sgd        0.2620     0.0022   8.5656  -42977.1707
+wide         adam       0.2558     0.0058  23.3479  -34807.2478
+             momentum   0.2574     0.0059  24.5964  -46853.4160
+             sgd        0.2588     0.0061  27.3997  -28976.4113
+================================================================================
+
+Check the 'results' folder for:
+  - experiment_summary.csv (all data)
+  - statistics.csv (mean and std)
+  - detailed_results.json (full histories)
+  - architecture_comparison.png (bar charts)
+  - optimizer_comparison.png (grouped bars)
+  - correlation_matrix.png (heatmap)
+================================================================================
+GENERATING REPORT FIGURES
+================================================================================
+
+Loading results...
+
+Generating figures...
+✓ Generated Figure 1: Architecture Comparison
+✓ Generated Figure 2: Optimizer Effects
+✓ Generated Figure 3: Correlation Analysis
+✓ Generated Figure 4: Training Dynamics
+
+Generating tables...
+✓ Generated Table 1: Summary Statistics (CSV + LaTeX)
+
+================================================================================
+ALL FIGURES GENERATED!
+================================================================================
+
+Check the 'figures' folder for:
+  - figure1_architecture_comparison.png/.pdf
+  - figure2_optimizer_effects.png/.pdf
+  - figure3_correlation_analysis.png/.pdf
+  - figure4_training_dynamics.png/.pdf
+  - table1_summary_statistics.csv/.tex
