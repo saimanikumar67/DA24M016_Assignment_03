@@ -1,6 +1,6 @@
 # Loss Landscape Analyzer - Quick Start Guide
 
-## 📦 Installatio
+## 📦 Installation
 
 ### Step 1: Create Project Folder
 ```bash
